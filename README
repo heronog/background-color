@@ -14,6 +14,4 @@ run it like this
 then point your browser to http://localhost:8124/ to see it!!
 
 IDEAS:
-or make it wait for a command through JSON and make a web page that you can use in the iphone.
-
 add a nrf24l01 radio and control it through the airwaves!
