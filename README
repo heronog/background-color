@@ -1,0 +1,10 @@
+This is the software needed to control a RGB led with an arduino through a serial port.
+
+It opens the serial port and waits for a RGB color in hex notation like #ff00ff.
+it then sets the RGB led to that color and waits for your next command.
+
+IDEAS:
+add a nodejs script that waits for commands from twitter and sets the color acordingly.
+or make it wait for a command through JSON and make a web page that you can use in the iphone.
+
+add a nrf24l01 radio and control it through the airwaves!
