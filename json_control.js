@@ -44,9 +44,7 @@ var server = http.createServer(function(req, res) {
     } else {
       file = process.cwd() + '/public' + req.url;
     }
-    
-    console.log(file)
-    
+        
     fs.readFile( file , function(err, data) {
       if (err) {
         res.writeHead(500, {'Content-Type':'text/plain'});
