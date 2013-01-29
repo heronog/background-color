@@ -1,13 +1,13 @@
 This is the software needed to control a RGB led with an arduino through a serial port.
 
+the circuit is a standard RGB PWM control with arduino, as you can see in http://learn.adafruit.com/rgb-led-strips/usage
+
 It opens the serial port and waits for a RGB color in hex notation like #ff00ff.
 it then sets the RGB led to that color and waits for your next command.
 
 there's a node_js server that serves a jquery colorpicker and sends the selected color to the light.
 
 run it like this
-
-the circuit is a standard RGB control with mosfets, as you can see in http://learn.adafruit.com/rgb-led-strips/usage
 
 # node json_control.js
 
