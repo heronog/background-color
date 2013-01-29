@@ -45,12 +45,14 @@ var server = http.createServer(function(req, res) {
       file = process.cwd() + '/public' + req.url;
     }
     
+    console.log(file)
+    
     fs.readFile( file , function(err, data) {
       if (err) {
         res.writeHead(500, {'Content-Type':'text/plain'});
         res.end('internal error: ' + err);
       } else {
-        res.writeHead(200, {'Content-Type': mime.lookup(req.url)});
+        res.writeHead(200, {'Content-Type': mime.lookup(file)});
         res.end(data, 'utf-8');
       }
     });
