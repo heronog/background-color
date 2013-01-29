@@ -3,8 +3,17 @@ This is the software needed to control a RGB led with an arduino through a seria
 It opens the serial port and waits for a RGB color in hex notation like #ff00ff.
 it then sets the RGB led to that color and waits for your next command.
 
+there's a node_js server that serves a jquery colorpicker and sends the selected color to the light.
+
+run it like this
+
+the circuit is a standard RGB control with mosfets, as you can see in http://learn.adafruit.com/rgb-led-strips/usage
+
+# node json_control.js
+
+then point your browser to http://localhost:8124/ to see it!!
+
 IDEAS:
-add a nodejs script that waits for commands from twitter and sets the color acordingly.
 or make it wait for a command through JSON and make a web page that you can use in the iphone.
 
 add a nrf24l01 radio and control it through the airwaves!
