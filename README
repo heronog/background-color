@@ -1,4 +1,4 @@
-This is the software needed to control a RGB led with an arduino through a serial port.
+Software to control a RGB led with an arduino through a serial port.
 
 the circuit is a standard RGB PWM control with arduino, as you can see in http://learn.adafruit.com/rgb-led-strips/usage
 
@@ -12,6 +12,14 @@ run it like this
 # node json_control.js
 
 then point your browser to http://localhost:8124/ to see it!!
+
+you can also hit the server directly from the console like this:
+
+# curl -d "color=f56803" http://localhost:8124/set
+
+this creates a POST request to '/set' with a variable "color" set to the hex color you want.
+you know what to do
+
 
 IDEAS:
 add a nrf24l01 radio and control it through the airwaves!
